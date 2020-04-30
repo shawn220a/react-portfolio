@@ -9,7 +9,11 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Contact />
+        <div className="container">
+          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/portfolio" component={Portfolio} /> */}
+        </div>
       </div>
     </Router>
   );

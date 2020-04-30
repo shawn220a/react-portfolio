@@ -25,31 +25,31 @@ class Contact extends React.Component {
     return (
       <Form onSubmit={this.handleForm}>
         <FormGroup>
-          <Label for='exampleEmail'>Email</Label>
+          <Label for="examplePassword">Name</Label>
           <Input
-            type='email'
-            name='email'
-            id='exampleEmail'
-            placeholder='Enter your Email'
+            type="text"
+            name="name"
+            id="examplePassword"
+            placeholder="Enter your Name"
             onChange={this.handleFields}
           />
         </FormGroup>
         <FormGroup>
-          <Label for='examplePassword'>Name</Label>
+          <Label for="exampleEmail">Email</Label>
           <Input
-            type='text'
-            name='name'
-            id='examplePassword'
-            placeholder='Enter your Name'
+            type="email"
+            name="email"
+            id="exampleEmail"
+            placeholder="Enter your Email"
             onChange={this.handleFields}
           />
         </FormGroup>
         <FormGroup>
-          <Label for='exampleText'>Text Area</Label>
+          <Label for="exampleText">Text Area</Label>
           <Input
-            type='textarea'
-            name='text'
-            id='exampleText'
+            type="textarea"
+            name="text"
+            id="exampleText"
             onChange={this.handleFields}
           />
         </FormGroup>
