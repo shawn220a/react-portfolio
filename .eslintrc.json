@@ -32,7 +32,7 @@
         "func-names": "off",
         "no-undef": "off",
         "no-restricted-syntax": "off",
-        "no-unused-vars": "warn",
+        "no-unused-vars": "off",
         "react/jsx-filename-extension": "off",
         "react/prefer-stateless-function": "off",
         "import/no-named-as-default": "off",
