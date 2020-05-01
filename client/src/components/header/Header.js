@@ -1,35 +1,44 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from 'reactstrap';
 
-export class Header extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Shawn Tschoepe</h1>
-        <div>
-          <Link to="/" className="nav-link" id="about">
-            {' '}
-            Home
-            {' '}
-          </Link>
-        </div>
-        <div>
-          <Link to="/portfolio" className="nav-link" id="about">
-            {' '}
-            Portfolio
-            {' '}
-          </Link>
-        </div>
-        <div>
-          <Link to="/contact" className="nav-link" id="about">
-            {' '}
-            Contact
-            {' '}
-          </Link>
-        </div>
-      </div>
-    );
-  }
-}
+const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">Shawn Tschoepe</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="/">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/portfolio">
+                Portfolio
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/contact">
+                Contact
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+};
 
 export default Header;
