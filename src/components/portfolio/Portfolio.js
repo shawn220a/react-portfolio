@@ -15,7 +15,8 @@ const items = [
     src: '/imgs/screenshot-project1.png',
     altText: 'Trustafarian Worldwide',
     caption: 'Trustafarian Worldwide',
-    github: 'https://github.com/shawn220a/project_1'
+    github: 'GitHub: https://github.com/shawn220a/project_1',
+    live: 'Live: https://brennanpredmore.github.io/project_1/',
   },
   {
     src:
@@ -61,8 +62,8 @@ const Portfolio = (props) => {
       >
         <img src={item.src} alt={item.altText} />
         <CarouselCaption
-          captionText={item.github}
           captionHeader={item.caption}
+          captionText={item.github}
         />
       </CarouselItem>
     );
