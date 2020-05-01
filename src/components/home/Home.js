@@ -8,9 +8,9 @@ export class Home extends Component {
     return (
       <div>
         <Container className="aboutMe">
-          <h2>About Me</h2>
+          <h2>About Me:</h2>
           <Row>
-            <img src="./imgs/portfolio.jpg" />
+            <img src="./imgs/portfolio.jpg" alt="Portfolio" />
             <Col>
               <p>
                 My name is Shawn Tschoepe and I am currently the Director of
