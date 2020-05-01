@@ -15,22 +15,22 @@ const items = [
     src: '/imgs/screenshot-project1.png',
     altText: 'Trustafarian Worldwide',
     caption: 'Trustafarian Worldwide',
-    github: 'GitHub: https://github.com/shawn220a/project_1',
-    live: 'Live: https://brennanpredmore.github.io/project_1/',
+    github: 'https://github.com/shawn220a/project_1',
+    live: 'https://brennanpredmore.github.io/project_1/',
   },
   {
     src: '/imgs/screenshot-project1.png',
     altText: 'Trustafarian Worldwide',
     caption: 'Trustafarian Worldwide',
-    github: 'GitHub: https://github.com/shawn220a/project_1',
-    live: 'Live: https://brennanpredmore.github.io/project_1/',
+    github: 'https://github.com/shawn220a/project_1',
+    live: 'https://brennanpredmore.github.io/project_1/',
   },
   {
     src: '/imgs/screenshot-project1.png',
     altText: 'Trustafarian Worldwide',
     caption: 'Trustafarian Worldwide',
-    github: 'GitHub: https://github.com/shawn220a/project_1',
-    live: 'Live: https://brennanpredmore.github.io/project_1/',
+    github: 'https://github.com/shawn220a/project_1',
+    live: 'https://brennanpredmore.github.io/project_1/',
   },
 ];
 
@@ -67,6 +67,8 @@ const Portfolio = (props) => {
           captionHeader={item.caption}
           captionText={item.github}
         />
+        <a href={item.github}>{item.github}</a>
+        <a href={item.live}>{item.live}</a>
       </CarouselItem>
     );
   });
