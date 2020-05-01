@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import axios from 'axios';
+
+import './contact.css';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -23,7 +25,9 @@ class Contact extends React.Component {
   handleFields = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
     return (
-      <Form onSubmit={this.handleForm}>
+      <Container className='contact'>
+        <h2>Contact Me:</h2>
+        <Form onSubmit={this.handleForm}>
         <FormGroup>
           <Label for="examplePassword">Name</Label>
           <Input
@@ -55,6 +59,8 @@ class Contact extends React.Component {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </Container>
+      
     );
   }
 }
