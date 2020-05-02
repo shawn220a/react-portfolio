@@ -8,4 +8,5 @@
   height: 2rem;
   border-top: 8px solid #4aaaa5;
   text-align: center;
+  z-index: 1000;
 }

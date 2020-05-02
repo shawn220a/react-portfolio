@@ -65,10 +65,12 @@ const Portfolio = (props) => {
         <img src={item.src} alt={item.altText} />
         <CarouselCaption
           captionHeader={item.caption}
-          captionText={item.github}
+          captionText={(
+            <a rel="noopener noreferrer" target="_blank" href={item.github}>
+              {item.github}
+            </a>
+          )}
         />
-        <a href={item.github}>{item.github}</a>
-        <a href={item.live}>{item.live}</a>
       </CarouselItem>
     );
   });
